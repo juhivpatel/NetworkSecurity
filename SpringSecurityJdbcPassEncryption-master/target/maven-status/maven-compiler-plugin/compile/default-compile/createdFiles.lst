@@ -1,0 +1,4 @@
+hello/Application.class
+hello/MvcConfig.class
+hello/WebSecurityConfig.class
+hello/AuthenticationProviderConfig.class
