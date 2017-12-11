@@ -1,19 +1,21 @@
 # NetworkSecurity
 Instructions on how to run this poject
-Download STS from https://spring.io/tools/sts/all
-Download the project from github
+Download STS from https://spring.io/tools/sts/all 
+Download the project from github.
 Download MYSQL server from https://dev.mysql.com/downloads/cluster/
 While installing the sql server you will get your default password to sql server. Copy the password in a text file to change it later to your desirable password (choose passwrod root if you don't want to make any changes in the actual code)
-Start the aql server
-Go to terminal type command "pwd"
-Type command "ls -al" to see a list of file
-Check if you have a file called bash_profile. If not create a file and enter "export PATH=${PATH}:/usr/local/mysql/bin/" in the file. If the file alreay exst get rid of the specified path and enter the above path
-Then enter command "mysql -u root -p". If it says comand not found open another terminal window and type the same command. It will prompt you to enter password. Enter password that you saved in the text file while instaling sql server
-Once uder the sql server type the command "ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';" 
+Start the aql server.
+Go to terminal type command "pwd".
+Type command "ls -al" to see a list of file.
+Check if you have a file called bash_profile. If not create a file and enter "export PATH=${PATH}:/usr/local/mysql/bin/" in the file. If the file alreay exst get rid of the specified path and enter the above path.
+Then enter command "mysql -u root -p". If it says comand not found open another terminal window and type the same command. It will prompt you to enter password. Enter password that you saved in the text file while instaling sql server.
+Once uder the sql server type the command "ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';".
 Now download MySQL workbench from https://dev.mysql.com/downloads/workbench/ 
 Open MySQL wrokbench under the server and create a database instance with following details:
 connection name: local Instance, HostName: localhost, port: 3306
 Create a new database names "userbase" and run the following script:
+
+
 
 CREATE  TABLE users (
   userid VARCHAR(5) NOT NULL,
@@ -44,8 +46,9 @@ INSERT INTO user_roles (userid, role)
 VALUES ('001', 'ROLE_USER');
 
 
+
 Thus our database is now created.
-Open STS, import the project and run it using maven build
-Edit configuration by cahnging goals to "clean install spring-boot:run"
-STS will start tomcat server
-Now open localhost:8080 and you will get welcome page
+Open STS, import the project and run it using maven build.
+Edit configuration by cahnging goals to "clean install spring-boot:run".
+STS will start embeded tomcat server.
+Now open localhost:8080 and you will get welcome page.
