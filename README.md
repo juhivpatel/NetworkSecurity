@@ -1,10 +1,13 @@
 # NetworkSecurity
 Instructions on how to run this poject
+
 Download STS from https://spring.io/tools/sts/all 
-Download the project from github.
+Imort project in sts as existing maven projects and selecting root directory
+
+
 Download MYSQL server from https://dev.mysql.com/downloads/cluster/
 While installing the sql server you will get your default password to sql server. Copy the password in a text file to change it later to your desirable password (choose passwrod root if you don't want to make any changes in the actual code)
-Start the aql server.
+Start the sql server.
 Go to terminal type command "pwd".
 Type command "ls -al" to see a list of file.
 Check if you have a file called bash_profile. If not create a file and enter "export PATH=${PATH}:/usr/local/mysql/bin/" in the file. If the file alreay exst get rid of the specified path and enter the above path.
